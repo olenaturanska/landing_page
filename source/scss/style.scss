@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap');
+
+@import "null_style.scss";
+
+.start-page {
+    &__body {
+        height: 100vh;
+        width: 100%;
+        max-height: 1020px;
+        background-image: url("../img/start/startbodybackground.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__logo {
+        padding: 100px 0;
+        width: 100%;
+        text-align: center;
+        &-img {
+            height: 120px;
+        }
+    }
+    &__header {
+        margin: 0 auto;
+        position: relative;
+        color: #fff;
+        padding: 0 0 50px 0;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            bottom: 0;
+            height: 2px;
+            background-color: #fff;
+            left: 50%;
+            margin: 0 0 0 -50px;
+
+        }
+    }
+    &__title {
+        font-size: 34px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 60px;
+        font-family: "Lato";
+        font-weight: 900;
+    }
+    &_subtitle {
+        text-align: center;
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 5px;
+
+    }
+    &__button {
+        padding: 150px 0 80px 0;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        &-readmore{
+            width: 180px;
+            height: 50px;
+            margin: 0 auto;
+            border: 1px solid #fff;
+            background: none;
+            color: #fff;
+
+            &:hover{
+                background-color: #fff;
+                color: #53607f;
+            }
+        }
+    }
+    &__icon-down {
+        text-align: center;
+    }
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    &__items {
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        padding: 25px 0;
+        border-bottom: 1px solid #e7e7e7 ;
+    }
+    &__link {
+        color: #3c3c3c;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 400;
+        &-act {
+            color: #ada074;
+        }
+    }
+}
+
+.about {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    &__body {
+        max-width: 823px;
+        margin: 0 auto;
+    }
+    &__header {
+        margin: 0 0 65px 0;
+    }
+    &__title {
+        margin: 0 0 30px 0;
+    }
+    &__text {
+        max-width: 688px;
+        color: #868585;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 25.89px;
+        margin: 0 auto;
+    }
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+    }
+    &__column {
+        padding: 0 15px;
+        flex: 33.333%;
+    }
+}
+
+.portfolio {
+    &__body {
+        background-color: #f3f3f3;
+        padding-top: 100px;
+        padding-bottom: 65px;
+    }
+    &__title {
+        margin-bottom: 100px;
+    }
+    &__items {
+        margin: auto;
+        max-width: 1110px;
+        margin-bottom: 65px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 30px;
+    }
+    &__item {
+    }
+    &__img {
+        width: 545px;
+        height: 360px;
+    }
+    &__button{
+        margin: 0 auto;
+        background-color: #f3f3f3;
+        height: 50px;
+        width: 180px;
+        border: 1px solid #000;
+        display: flex;
+        &-readmore{
+            margin: 0 auto;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #000000;
+            font-weight: 400;
+            font-family: "Lato";
+            background: none;
+        }
+    }
+}
+
+.partners {
+    &__body{        
+        height: 100vh;
+        width: 100%;
+        max-height: 385px;
+        background-image: url("../img/partners/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+    }
+    &__title {
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Lato";
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        &-logo {
+        }
+    }
+}
+
+.contact {
+    &__body{
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 85px;
+    }
+    &__text{
+        width: 255px;
+        font-size: 14px;
+        line-height: 26px;
+        color: #000000;
+        font-weight: 300;
+        font-family: "Lato";
+    }
+    &__links{
+        &-name{
+            font-size: 14px;
+            line-height: 26px;
+            color: #000000;
+            font-weight: 300;
+            font-family: "Lato";
+        }
+        &-item{
+            font-size: 14px;
+            line-height: 26px;
+            color: #000000;
+            font-weight: 700;
+            font-family: "Lato";
+        }
+    }
+}
+
+.footer {
+    &__body {
+        background-color: #3c3c3c;
+        padding: 45px 0;
+    }
+    &__logo {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__links {
+        margin-bottom: 30px;
+        &-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            &-item{
+                font-size: 14px;
+                color: #a4a4a4;
+                font-weight: 400;
+                font-family: "Lato";
+            }
+        }
+    }
+    &__rights {
+        font-size: 14px;
+        color: #6c6c6c;
+        font-family: "Myriad Pro";
+        text-align: center;
+    }
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8.95px;
+    position: relative;
+    text-align: center;
+    padding: 0 0 30px 0;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        bottom: 0;
+        height: 1px;
+        left: 50%;
+        background-color: #000;
+        margin: 0 0 0 -25px;
+    }
+}
+.item-about {
+    &__icon {
+        margin: 0 auto 40px auto;
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+        border: 2px solid #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        text-align: center;
+        color: #000000;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 3.52px;
+        margin: 0 0 35px 0;
+    }
+    &__text {
+        text-align: center;
+        color: #868585;
+        font-weight: 300;
+        line-height: 26px;
+        width: 183px;
+        //height: 66px;
+        margin: 0 auto;
+    }
+}
